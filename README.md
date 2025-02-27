@@ -12,9 +12,6 @@ This iOS app, built with UIKit, loads data of the Myanmar Dream Dictionary from 
 Resources for the project were provided by Ko Sann Lynn Htun (https://github.com/sannlynnhtun-coding/).
 [Dream Dictionary Resources](https://github.com/burma-project-ideas/dream-dictionary)
 
-The Flutter project by Ko Shin Thant Aung served as inspiration for the project's UI design.
-[Dream Dictionary Flutter Project](https://github.com/n3k00/dream_dictionary)
-
 ## Images
 
 ### Light Theme
