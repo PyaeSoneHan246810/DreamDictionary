@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemsTableViewCell" rowHeight="293" id="pnm-fY-S6N" customClass="ItemsTableViewCell" customModule="DreamDictionary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pnm-fY-S6N" id="CTc-5E-qR2">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xp2-V8-rwR" userLabel="Bg View">
+                        <rect key="frame" x="12" y="0.0" width="369" height="148"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3IT-PY-aBw" userLabel="Horizontal Stack View">
+                                <rect key="frame" x="12" y="16" width="345" height="116"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q75-wl-fgu" userLabel="numberCircleView">
+                                        <rect key="frame" x="0.0" y="28" width="60" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEx-WC-Q10" userLabel="lblNumber">
+                                                <rect key="frame" x="26" y="20" width="8" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="3eC-DJ-gMc"/>
+                                            <constraint firstItem="QEx-WC-Q10" firstAttribute="centerX" secondItem="q75-wl-fgu" secondAttribute="centerX" id="N5u-Zo-LT3"/>
+                                            <constraint firstAttribute="height" constant="60" id="YaV-hv-BRm"/>
+                                            <constraint firstItem="QEx-WC-Q10" firstAttribute="centerY" secondItem="q75-wl-fgu" secondAttribute="centerY" id="kpG-eT-GeE"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ကြာသွတ်အိုးနှင့် ရေချိုးရသည်ဟု မြင်မက်မူ သူတစ်ပါးတို့၏မှီခိုရာဖြစ်အံ့။ ကြာသွတ်အိုးမြင်မက်မူ စည်းစိမ်များအံ့။" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="449-do-aDR" userLabel="lbContent">
+                                        <rect key="frame" x="72" y="33" width="273" height="50.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3IT-PY-aBw" secondAttribute="bottom" constant="16" id="02Z-0R-0hg"/>
+                            <constraint firstItem="3IT-PY-aBw" firstAttribute="top" secondItem="Xp2-V8-rwR" secondAttribute="top" constant="16" id="MDm-Lf-LgN"/>
+                            <constraint firstItem="3IT-PY-aBw" firstAttribute="leading" secondItem="Xp2-V8-rwR" secondAttribute="leading" constant="12" id="ZQ2-Kn-fBh"/>
+                            <constraint firstAttribute="trailing" secondItem="3IT-PY-aBw" secondAttribute="trailing" constant="12" id="lpm-tV-N4R"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xp2-V8-rwR" firstAttribute="top" secondItem="CTc-5E-qR2" secondAttribute="top" id="Bmj-Au-eWi"/>
+                    <constraint firstItem="Xp2-V8-rwR" firstAttribute="leading" secondItem="CTc-5E-qR2" secondAttribute="leading" constant="12" id="QVk-lu-sbg"/>
+                    <constraint firstAttribute="bottom" secondItem="Xp2-V8-rwR" secondAttribute="bottom" constant="12" id="Udf-Sz-FXb"/>
+                    <constraint firstAttribute="trailing" secondItem="Xp2-V8-rwR" secondAttribute="trailing" constant="12" id="sGD-u2-rKj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblContent" destination="449-do-aDR" id="pOA-PO-k0r"/>
+                <outlet property="lblNumber" destination="QEx-WC-Q10" id="Anq-DY-Xz0"/>
+                <outlet property="numberCircleView" destination="q75-wl-fgu" id="pXS-e7-gib"/>
+            </connections>
+            <point key="canvasLocation" x="46.564885496183201" y="-158.45070422535213"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.61568627450980395" green="0.5607843137254902" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

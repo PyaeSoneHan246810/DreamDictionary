@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorView" customModule="DreamDictionary" customModuleProvider="target">
+            <connections>
+                <outlet property="imgError" destination="ygm-53-qwK" id="s8c-Gt-h3D"/>
+                <outlet property="lblErrorMessage" destination="BUk-HM-4gs" id="qQW-in-Ygd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CQx-6t-heE">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yZ1-yG-zKH">
+                    <rect key="frame" x="16" y="324.33333333333331" width="361" height="203.33333333333331"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ygm-53-qwK" userLabel="imgError">
+                            <rect key="frame" x="100.66666666666669" y="1.3333333333333286" width="160" height="157.66666666666669"/>
+                            <color key="tintColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="Kpj-fd-6HP"/>
+                                <constraint firstAttribute="width" constant="160" id="rCI-t6-Xb3"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUk-HM-4gs" userLabel="lblErrorMessage">
+                            <rect key="frame" x="86" y="176" width="189" height="27.333333333333371"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yZ1-yG-zKH" firstAttribute="centerY" secondItem="CQx-6t-heE" secondAttribute="centerY" id="7BZ-c3-TeR"/>
+                <constraint firstAttribute="trailing" secondItem="yZ1-yG-zKH" secondAttribute="trailing" constant="16" id="SMQ-dF-vfC"/>
+                <constraint firstItem="yZ1-yG-zKH" firstAttribute="leading" secondItem="CQx-6t-heE" secondAttribute="leading" constant="16" id="oer-Al-dYb"/>
+            </constraints>
+            <point key="canvasLocation" x="-575" y="-64"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="109"/>
+        <namedColor name="AccentColor">
+            <color red="0.61568627450980395" green="0.5607843137254902" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
