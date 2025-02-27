@@ -1,6 +1,6 @@
 # Dream Dictionary iOS App
 
-This iOS app, built with SwiftUI, loads data of the Myanmar Dream Dictionary from a JSON file, allowing users to browse the collection of dream interpretations.
+This iOS app, built with UIKit, loads data of the Myanmar Dream Dictionary from a JSON file, allowing users to browse the collection of dream interpretations.
 
 ## Used Technologies
 
